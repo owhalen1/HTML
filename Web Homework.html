@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Latitute Dashboard </title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+<style>
+ ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(57, 79, 204);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+   <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#data">Data</a></li>
+     <li><a href="#comparisons">Comparisons</a></li>
+        <a target="_blank" href="C:\Users\Owner\Documents\Data Science Bootcamp\HTML\Comparisons.html"></a>
+     <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Plots</a>
+       <div class="dropdown-content">
+          <a href="#temp">Latitude Vs. Temperature</a>
+          <a href="#wind">Latitude Vs. Wind</a>
+          <a href="#clouds">Latitude Vs. Clouds</a>
+          <a href="#humidity">Latitude Vs. Humidity</a>
+        </div>
+       </div>
+      </li>
+     </ul>
+   
+</body>
+</style>
+  <section>
+    <style>
+      body {background-color: lightskyblue}
+   </style>
+<div class= "row"> 
+  <div class="col-md-6"> 
+      <h1 style="color:black">Summary: Latitude VS. X </h1>
+       <p> The purpose of this asignment was to research how latitude affected temperature, wind, humidity and clouds. To gather the data, I used OpenweatherMap API to obtain necessary datapoints of over 500 cities.</p>
+        <p> After the dataset was assembled, I used the Matplotlib library to create visualizations of how the latitude affected the weather of the cities. This website contains these visualizations, critical pieces of the dataset used, and summarized explanations of my findings. 
+         This website proviedes critical pieces of the data used for research, the visualizations, and summarys describing my findings and research.
+         </p>        
+          <article>
+          <a target="_blank" href="C:\Users\Owner\Documents\Data Science Bootcamp\Homework\Weather API Solved\latitudetemp.png">
+            <img src="C:\Users\Owner\Documents\Data Science Bootcamp\Homework\Weather API Solved\latitudetemp.png" alt="Cloudy Map" alight ="left" height="200" width ="200">
+              <p> Latitude vs. Temp </p>
+      </div>
+       <div class="col-md-6"> 
+        <style>
+         div.gallery {
+        border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+        border: 1px solid rgb(53, 142, 214);
+        }
+
+        div.gallery img {
+         width: 100%;
+        height: auto;
+        }
+
+        div.desc {
+        padding: 15px;
+        text-align: center;
+        }
+
+    *  {
+       box-sizing: border-box;
+      }
+
+    .responsive {
+      padding: 0 6px;
+       float: left;
+      width: 24.99999%;
+      }
+
+    @media only screen and (max-width: 700px) {
+      .responsive {
+       width: 49.99999%;
+        margin: 6px 0;
+      }
+      }
+
+    @media only screen and (max-width: 500px) {
+      .responsive {
+       width: 100%;
+    }
+    }
+          
+          body {background-color: rgb(55, 202, 228)}
+      </style>
+     <body>
+          
+          <h2>Visualizations </h2>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="C:\Users\Owner\Documents\Data Science Bootcamp\Homework\Weather API Solved\latitudeclouds.png">
+                <img src="C:\Users\Owner\Documents\Data Science Bootcamp\Homework\Weather API Solved\latitudeclouds.png" alt="Latitude and Clouds" width="600" height="400">
+              </a>
+              <div class="desc">Latitude and Clouds</div>
+            </div>
+          </div>
+          
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="C:\Users\Owner\Documents\Data Science Bootcamp\Homework\Weather API Solved\latitudehumidity.png">
+                <img src="C:\Users\Owner\Documents\Data Science Bootcamp\Homework\Weather API Solved\latitudehumidity.png" alt="Latitude Vs. Humidity" width="600" height="400">
+              </a>
+              <div class="desc">Latitude and Humidity</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="C:\Users\Owner\Documents\Data Science Bootcamp\Homework\Weather API Solved\latitudewind.png">
+                <img src="C:\Users\Owner\Documents\Data Science Bootcamp\Homework\Weather API Solved\latitudewind.png" alt="Latitude Vs. Wind" width="600" height="400">
+              </a>
+              <div class="desc">Latitude and Wind</div>
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="C:\Users\Owner\Documents\Data Science Bootcamp\Homework\Weather API Solved\latitudetemp.png">
+                <img src="C:\Users\Owner\Documents\Data Science Bootcamp\Homework\Weather API Solved\latitudetemp.png" alt="Latitude Vs. Temp" width="600" height="400">
+              </a>
+              <div class="desc">Latutide Vs. Temperature</div>
+            </div>
+          </div>
+          
+          <div class="clearfix"></div>
+     </a>
+    </article>
+   </div>
+  </div>
+</style>
+</head>
+</html>
